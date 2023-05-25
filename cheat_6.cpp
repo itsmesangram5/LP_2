@@ -59,7 +59,6 @@ int main()
                  {'e', 3, 15}};
 
     int n = sizeof(arr) / sizeof(arr[0]);
-    // cout<<n;
 
     jobScheduling(arr, n);
 }
