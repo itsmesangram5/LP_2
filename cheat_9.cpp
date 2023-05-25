@@ -28,7 +28,7 @@ int minDistance(int dist[], bool sptSet[])
 // array
 void printSolution(int dist[])
 {
-    cout << "Vertex \t Distance from Source" << endl;
+    cout << "\nVertex \t\t Distance from Source" << endl;
     for (int i = 0; i < V; i++)
         cout << i << " \t\t\t\t" << dist[i] << endl;
 }
@@ -65,6 +65,7 @@ void dijkstra(int graph[V][V], int src)
 
         // Mark the picked vertex as processed
         sptSet[u] = true;
+        cout << u << "--";
 
         // Update dist value of the adjacent vertices of the
         // picked vertex.
